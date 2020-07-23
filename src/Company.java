@@ -36,7 +36,7 @@ public class Company {
     }
 
     public int idNuevoEmpleado(){
-        return listaEmpleados.size();
+        return listaEmpleados.size()+1;
 
 
     }

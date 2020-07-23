@@ -13,18 +13,18 @@ public class Main {
 
 
         Empleado empleado = new Empleado(company,"Javier","Fernandez",1000f);
-        System.out.println(empleado.getId());
 
-        Empleado empleado2 = new Empleado(company,"Javier","Fernandez",1000f);
-        System.out.println(empleado.getId());
-
-        System.out.println(company.idNuevoEmpleado());
         company.add(empleado);
-        System.out.println(company.idNuevoEmpleado());
+        Empleado empleado2 = new Empleado(company,"María","Fernandez",1000f);
+
         company.add(empleado2);
-        System.out.println(company.idNuevoEmpleado());
+        Empleado empleado3 = new Empleado(company,"Manolo","CabezaBolo",1000f);
+        company.add(empleado3);
+
+
         System.out.println(empleado.getId());
         System.out.println(empleado2.getId());
+        System.out.println(empleado3.getId());
 
 
         System.out.println(company.totalSalary());
