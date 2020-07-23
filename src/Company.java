@@ -13,7 +13,7 @@ public class Company {
         listaEmpleados.add(empleado);
     }
 
-    public void printAl(){
+    public void printAll(){
         for (Empleado empleado:listaEmpleados){
             System.out.println(empleado);
         }
@@ -27,7 +27,6 @@ public class Company {
         for (Empleado empleado:listaEmpleados){
             salaryTotal+=empleado.getSalary();
         }
-
         return salaryTotal;
     }
 
@@ -37,8 +36,6 @@ public class Company {
 
     public int idNuevoEmpleado(){
         return listaEmpleados.size()+1;
-
-
     }
 
 
